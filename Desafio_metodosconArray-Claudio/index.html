@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-4">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Centro Médico Ñuñoa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div style="display: flex">
+    <button id="btnradiologia" type="button">
+      Radiologia
+    </button>
+    <button id="btndental" type="button">
+      Dental
+    </button>
+    <button id="btntraumatologia" type="button">
+      Traumatologia
+    </button>
+  </div><br></br>
+  <div style="display: flex"></div>
+  <button id="reset" type="button">
+    <a href="" style="text-decoration:none"> Resetear pag </a>
+  </button>
+
+  <button id="btnlimpiar" type="button">
+    Limpiar Tabla
+  </button>
+  <button id="btnaddtraumatologia" type="button">
+    Agrega (push) datos a Traumatologia
+  </button>
+  <button id="btndelradiologia" type="button">
+    Elimina Radiologia
+  </button>
+  <button id="btnprintdental" type="button">
+    Imprime Dental
+  </button>
+  <button id="btntodospacientes" type="button">
+    Todos los Pacientes
+  </button>
+  <button id="btnisapredental" type="button">
+    Isapre Dental
+  </button>
+  <button id="btnfonsaTraumatologia" type="button">
+    Fonasa Traumatologia
+  </button>
+  </div>
+
+  <div id="atenciones">
+    <h2> </h2>
+
+  </div>
+  <div id="container" class="container">
+    <h2> Datos Pacientes </h2>
+    <div id="table" class="table-responsive-sm">
+      <table class="table ">
+        <thead>
+          <tr>
+            <th scope="col">Hora</th>
+            <th scope="col">Especialista</th>
+            <th scope="col">Paciente</th>
+            <th scope="col">Rut</th>
+            <th scope="col">Prevision</th>
+          </tr>
+        </thead>
+        <tbody id="resultado">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="container">
+    <button id="btnestadisticas" type="button">
+      Estadisicas
+    </button>
+    <div id="estadisticas">
+     
+    </div>
+  </div>
+
+  <script src="app.js">
+// document.write('<p>Estadisticas centro medico ñuñoa</p>');
+  </script>
+</body>
+
+</html>
